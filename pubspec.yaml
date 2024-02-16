@@ -29,8 +29,6 @@ flutter:
   assets:
     - images/
 
-
-
   fonts:
     - family: Caveat
       fonts:
