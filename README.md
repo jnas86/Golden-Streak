@@ -15,7 +15,7 @@ and answers (True/False).
 
 ## App info
 Some useful information about the application:
-* It is a based on a programming exercise into a Udemy course ("# [The Complete Flutter Development Bootcamp with Dart](https://www.udemy.com/course/flutter-bootcamp-with-dart/)")
+* It is an alternative of a programming exercise into a Udemy course ("# [The Complete Flutter Development Bootcamp with Dart](https://www.udemy.com/course/flutter-bootcamp-with-dart/)")
 * The questions are generated from the free api in the Url: https://opentdb.com/
 * Each time the player answers correct, the score is increased by one, otherwise the game resets
 and the player starts from the beginning
