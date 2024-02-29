@@ -5,11 +5,12 @@ import 'package:grand_serie/question.dart';
 import 'package:http/http.dart' as http;
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+      const MyApp());
 }
 
 Future<List<Question>> get_questions_from_api() async {
-  final response = await http.get(Uri.parse('https://opentdb.com/api.php?amount=50&type=boolean'));
+  var response = await http.get(Uri.parse('https://opentdb.com/api.php?amount=50&type=boolean'));
 
   if (response.statusCode == 200) {
     final List<dynamic> data = json.decode(response.body)['results'];
@@ -196,6 +197,7 @@ class _QuestionsPage extends State<QuestionsPage> {
                       answer_streak = 0;
                       // Update question_body with the text of the first question
                     });
+                    future_questions = get_questions_from_api();
                   },
                   child: const Text("Restart"),
                 ),
